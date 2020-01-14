@@ -309,6 +309,12 @@ class MainFunctions:
                 except KeyError:
                     print(colored("Input is invalid. Please only input valid integers.", errorFontColor))
                     self.advanced()
+                except SyntaxError:
+                    print(colored("Input is invalid. Please only input valid integers.", errorFontColor))
+                    self.advanced()
+                except NameError:
+                    print(colored("Input is invalid. Please only input valid integers.", errorFontColor))
+                    self.advanced()
                 else:
                     self.advanced()
 
